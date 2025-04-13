@@ -1,7 +1,8 @@
-import { ContractSection } from "./components/ContractSection"
+
 import { IntroSection } from "./components/IntroSection"
 import { Navbar } from "./components/Navbar"
 import { ProjectSection } from "./components/ProjectSection"
+import { ContactSection } from "./components/ContactSection"
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <IntroSection />
       <ProjectSection />
-      <ContractSection />
+      <ContactSection />
     </main>
   )
 }
