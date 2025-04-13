@@ -1,8 +1,16 @@
+import { ContractSection } from "./components/ContractSection"
+import { IntroSection } from "./components/IntroSection"
+import { Navbar } from "./components/Navbar"
+import { ProjectSection } from "./components/ProjectSection"
+
 function App() {
   return (
-    <div className="bg-blue-500 text-white text-3xl font-bold p-8">
-      Tailwind está funcionando 🎉
-    </div>
+    <main className="min-h-screen font-sans bg-white text-gray-800">
+      <Navbar />
+      <IntroSection />
+      <ProjectSection />
+      <ContractSection />
+    </main>
   )
 }
 
