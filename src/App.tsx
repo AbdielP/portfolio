@@ -5,7 +5,7 @@ import { ProjectSection } from "./components/ProjectSection"
 
 function App() {
   return (
-    <main className="min-h-screen font-sans bg-white text-gray-800">
+    <main className="min-h-screen font-sans bg-white text-gray-800 font-body">
       <Navbar />
       <IntroSection />
       <ProjectSection />
