@@ -1,8 +1,8 @@
 
+import { ContactSection } from "./components/ContactSection"
 import { IntroSection } from "./components/IntroSection"
 import { Navbar } from "./components/Navbar"
 import { ProjectSection } from "./components/ProjectSection"
-import { ContactSection } from "./components/ContactSection"
 
 function App() {
   return (
