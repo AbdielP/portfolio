@@ -56,7 +56,7 @@ export const ProjectSection = () => {
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="text-3xl md:text-4xl font-title font-bold text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-title font-bold text-start mb-12">
         Projects
       </h2>
 
@@ -73,8 +73,8 @@ export const ProjectSection = () => {
             />
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-700">{project.description}</p>
+              <h3 className="text-xl font-semibold font-title mb-2">{project.title}</h3>
+              <p className="text-sm font-body text-gray-700">{project.description}</p>
             </div>
             {/* TECH ICONS  */}
             {project.tech && (
