@@ -1,4 +1,5 @@
 import mainImage from '../assets/images/dev_ilustration2.png'
+import { MdDownload } from "react-icons/md"
 
 export const IntroSection = () => {
   return (
@@ -16,11 +17,20 @@ export const IntroSection = () => {
         </p>
 
         <div className="mt-8 flex justify-center md:justify-start gap-4">
-          <a href="/abdiels-fullstack-developer-resume.pdf" download
-            className="bg-green hover:bg-green-dark active:bg-green-light text-white px-6 py-2 rounded-md flex items-center gap-2">
-              Resume
+        <a
+    href="/abdiels-fullstack-developer-resume.pdf"
+    download
+    className="bg-green hover:bg-green-dark active:bg-green-light text-white px-6 py-2 rounded-sm font-body text-sm tracking-wide uppercase flex items-center gap-2 transition-all duration-200"
+  >
+    <MdDownload className="text-base translate-y-[1px]" />
+    Resume
+  </a>
+          <a
+            href="#contact"
+            className="border border-gray-800 px-6 py-2 rounded-sm font-body text-sm tracking-wide uppercase hover:bg-gray-100 transition-colors duration-200  F"
+          >
+            Contact Me
           </a>
-          <a href="#contact" className="border border-black px-6 py-2 rounded-md">Contact</a>
         </div>
       </div>
 
