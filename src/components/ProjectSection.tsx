@@ -16,7 +16,7 @@ import { JSX } from 'react'
 export const ProjectSection = () => {
   const techIcons: Record<string, JSX.Element> = {
     React: <FaReact className="w-7 h-7 text-cyan-500" />,
-    'Node.js': <FaNodeJs className="w-7 h-7 text-green-600" />,
+    'Node.js': <FaNodeJs className="w-7 h-7 text-blueSky-600" />,
     PHP: <FaPhp className="w-7 h-7 text-indigo-600" />,
     Angular: <FaAngular className="w-7 h-7 text-red-600" />,
     JavaScript: <FaJs className="w-7 h-7 text-yellow-400" />,
@@ -95,7 +95,7 @@ export const ProjectSection = () => {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green hover:underline text-sm font-medium flex items-center gap-1"
+                  className="text-blueSky hover:underline text-sm font-medium flex items-center gap-1"
                 >
                   <TbWorldSearch  className="w-4 h-4" />
                   Demo
@@ -105,7 +105,7 @@ export const ProjectSection = () => {
                 href={project.code}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green hover:underline text-sm font-medium flex items-center gap-1"
+                className="text-blueSky hover:underline text-sm font-medium flex items-center gap-1"
               >
                 <LuCodeXml className="w-4 h-4" />
                 Code
