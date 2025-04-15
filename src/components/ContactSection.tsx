@@ -10,7 +10,7 @@ export const ContactSection = () => {
   return (
     <section className="bg-white py-20 px-6" id='contact'>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4 font-title">
+        <h2 className="text-3xl font-bold mb-4 font-title">
           Contact me
         </h2>
 
@@ -20,7 +20,7 @@ export const ContactSection = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 font-body text-gray-700 text-lg mb-12">
           <div className="flex items-center gap-2">
-            <FaEnvelope className="text-green text-xl" />
+            <FaEnvelope className="font-title text-xl" />
             {email && (
               <a href={`mailto:${email}`} className="hover:underline font-semibold">
                 {email}
@@ -29,7 +29,7 @@ export const ContactSection = () => {
 
           </div>
           {/* <div className="flex items-center gap-2">
-            <FaPhoneAlt className="text-green text-lg" />
+            <FaPhoneAlt className="text-blueSky text-lg" />
             <a href="tel:+50760000000" className="hover:underline font-semibold">
               +507 6000-0000
             </a>
@@ -44,7 +44,7 @@ export const ContactSection = () => {
             href="https://github.com/abdiel-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green transition-transform hover:scale-110"
+            className="hover:text-blueSky transition-transform hover:scale-110"
           >
             <FaGithub />
           </a>
@@ -52,7 +52,7 @@ export const ContactSection = () => {
             href="https://linkedin.com/in/abdiel-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green transition-transform hover:scale-110"
+            className="hover:text-blueSky transition-transform hover:scale-110"
           >
             <FaLinkedin />
           </a>

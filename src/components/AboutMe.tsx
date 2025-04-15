@@ -27,7 +27,7 @@ export const AboutMe = () => {
                             href="https://github.com/abdiel-dev"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-green transition-colors"
+                            className="hover:text-blueSky transition-colors"
                         >
                             <FaGithub />
                         </a>
@@ -35,13 +35,13 @@ export const AboutMe = () => {
                             href="https://linkedin.com/in/abdiel-dev"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-green transition-colors"
+                            className="hover:text-blueSky transition-colors"
                         >
                             <FaLinkedin />
                         </a>
                     </div>
 
-                    <a href="#contact" className="inline-flex items-center gap-1 text-sm font-medium underline hover:text-green transition mt-4">
+                    <a href="#contact" className="inline-flex items-center gap-1 text-sm font-medium underline hover:text-blueSky transition mt-4">
                         Get in touch 
                         {/* <FaArrowRight className="text-xs" /> */}
                     </a>

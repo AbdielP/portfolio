@@ -9,10 +9,15 @@ export default {
       colors: {
         primary: '#424242',
         green: {
-          DEFAULT: '#507B36',     // `bg-brand`, `text-brand`, etc.
+          DEFAULT: '#60A5FA',     // `bg-brand`, `text-brand`, etc.
           light: '#7BAF5B',       // `bg-brand-light`, para hover claro
           dark: '#40602A',        // `hover:bg-brand-dark`, o `text-brand-dark`
-        }
+        },
+        blueSky: {
+          light: '#F0F9FF',
+          DEFAULT: '#60A5FA',
+          dark: '#3B82F6',
+        },
       },
       fontFamily: {
         title: ['Inter', 'sans-serif'],

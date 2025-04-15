@@ -20,7 +20,7 @@ export const IntroSection = () => {
           <a
             href="/abdiels-fullstack-developer-resume.pdf"
             download
-            className="bg-green hover:bg-green-dark active:bg-green-light text-white px-6 py-2 rounded-sm font-body text-sm tracking-wide uppercase flex items-center gap-2 transition-all duration-200"
+            className="bg-blueSky hover:bg-blueSky-dark active:bg-blueSky-light text-white px-6 py-2 rounded-sm font-body text-sm tracking-wide uppercase flex items-center gap-2 transition-all duration-200"
           >
             <MdDownload className="text-base translate-y-[1px]" />
             Resume
