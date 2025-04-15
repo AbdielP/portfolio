@@ -10,4 +10,8 @@
       background-color: #f3f4f6;
       /* background: linear-gradient(to bottom, #f3f4f6, #e8f5e9); */
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   }

@@ -19,8 +19,8 @@ export const Navbar = () => {
                 <div
                     className={`flex flex-col md:flex-row gap-4 md:gap-8 text-sm font-medium ${open ? 'flex' : 'hidden'} md:flex`}
                 >
-                    <a href="#projects" className="hover:text-black">Projects</a>
                     <a href="#about" className="hover:text-black">About</a>
+                    <a href="#projects" className="hover:text-black">Projects</a>
                     <a href="#contact" className="hover:text-black">Contact</a>
                 </div>
             </div>
