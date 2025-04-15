@@ -1,6 +1,12 @@
 import { FaEnvelope, FaPhoneAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 export const ContactSection = () => {
+  const [email, setEmail] = useState('')
+  useEffect(() => {
+    setEmail('abdiel.pinzon@gmail.com')
+  }, [])
+
   return (
     <section className="bg-white py-20 px-6" id='contact'>
       <div className="max-w-4xl mx-auto text-center">
@@ -15,16 +21,19 @@ export const ContactSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 font-body text-gray-700 text-lg mb-12">
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-green text-xl" />
-            <a href="mailto:abdiel.pinzon@gmail.com" className="hover:underline font-semibold">
-              abdiel.pinzon@gmail.com
-            </a>
+            {email && (
+              <a href={`mailto:${email}`} className="hover:underline font-semibold">
+                {email}
+              </a>
+            )}
+
           </div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <FaPhoneAlt className="text-green text-lg" />
             <a href="tel:+50760000000" className="hover:underline font-semibold">
               +507 6000-0000
             </a>
-          </div>
+          </div> */}
         </div>
 
         <p className="text-sm text-gray-500 mb-3 font-body">
