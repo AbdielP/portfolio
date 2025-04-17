@@ -3,23 +3,39 @@ import { SiDotnet, SiMongodb, SiMui, SiMysql, SiPostgresql } from 'react-icons/s
 import { TbWorldSearch } from 'react-icons/tb'
 
 export const MyStack = () => {
-    return (
-        <section className="max-w-6xl mx-auto px-6 py-20">
-            <h2 className="text-3xl md:text-4xl font-title font-bold text-center md:text-end mb-14">Tech Stack</h2>
+    const icons = [
+        <FaReact title="React" />,
+        <FaNodeJs title="Node.js" />,
+        <FaJs title="JavaScript" />,
+        <SiMysql title="MySQL" />,
+        <SiMui title="MUI" />,
+        <FaPhp title="PHP" />,
+        <FaAngular title="Angular" />,
+        <TbWorldSearch title="Web APIs" />,
+        <SiPostgresql title="PostgreSQL" />,
+        <FaCss3 title="CSS3" />,
+        <SiDotnet title=".NET" />,
+        <SiMongodb title="MongoDB" />
+    ]
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-20 gap-x-12 justify-items-center text-primary text-center">
-                <FaReact className="w-12 h-12" title="React" />
-                <FaNodeJs className="w-12 h-12" title="Node.js" />
-                <FaJs className="w-12 h-12" title="JavaScript" />
-                <SiMysql className="w-12 h-12" title="MySQL" />
-                <SiMui className="w-12 h-12" title="MUI" />
-                <FaPhp className="w-12 h-12" title="PHP" />
-                <FaAngular className="w-12 h-12" title="Angular" />
-                <TbWorldSearch className="w-12 h-12" title="Web APIs / Tools" />
-                <SiPostgresql className="w-12 h-12" title="PostgreSQL" />
-                <FaCss3 className="w-12 h-12" title="CSS3" />
-                <SiDotnet className="w-12 h-12" title=".NET" />
-                <SiMongodb className="w-12 h-12" title="MongoDB" />
+    return (
+        <section className="max-w-6xl mx-auto px-6 py-20 text-primary">
+            <h2 className="text-3xl font-title font-bold text-center md:text-end mb-8">
+                Tech Stack
+            </h2>
+
+            <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
+                {icons.map((Icon, i) => (
+                    <div
+                        key={i}
+                        className="w-[20%] max-w-[100px] sm:w-[25%] sm:max-w-[120px] xs:w-[33.33%] xs:max-w-[150px] 
+                       flex justify-center items-center"
+                    >
+                        <div className="text-6xl border border-primary rounded-md px-8 py-6 backdrop-blur-sm hover:scale-[1.05] transition-all duration-200">
+                            {Icon}
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     )

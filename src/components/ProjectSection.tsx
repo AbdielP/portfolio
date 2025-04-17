@@ -56,7 +56,7 @@ export const ProjectSection = () => {
 
   return (
     <section id="projects" className="max-w-6xl mx-auto px-6 py-16 mb-11">
-      <h2 className="text-3xl md:text-4xl font-title font-bold text-start mb-12">
+      <h2 className="text-3xl font-title font-bold text-start mb-8">
         Projects
       </h2>
 
