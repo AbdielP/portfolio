@@ -14,7 +14,7 @@ export const ContactSection = () => {
           Contact <span className='text-blueSky'>me</span>
         </h2>
 
-        <p className="text-gray-600 mb-10 font-body max-w-xl mx-auto">
+        <p className="text-gray-600 mb-10 font-body max-w-xl mx-auto leading-loose">
           Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
         </p>
 

@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaArrowRight } from 'react-icons/fa';
 export const AboutMe = () => {
     return (
         <section className="relative pb-24 pt-12 px-6" id='about'>
-            <h1 className="absolute top-8 left-1/2 transform -translate-x-1/2 text-[120px] opacity-10 font-title select-none hidden md:block">
+            <h1 className="absolute top-10 left-1/2 transform -translate-x-1/2 text-[120px] opacity-10 font-title select-none hidden md:block">
                 About
             </h1>
 
@@ -17,9 +17,9 @@ export const AboutMe = () => {
                 />
                 <div>
                     <h2 className="text-3xl font-title font-bold mb-4">About <span className='text-blueSky'>Me</span></h2>
-                    <p className="font-body max-w-xl mb-6">
-                        I’m a fullstack developer with extensive experience in internal applications and automation tools.
-                        I’m currently pursuing a Master’s degree in Software Engineering and have a strong interest in learning new technologies.
+                    <p className="mt-6 font-body max-w-lg mx-auto md:mx-0">
+                    I enjoy building tools that make people’s work easier. Over the years, I’ve developed internal apps that save time, reduce errors, and improve efficiency. I’m currently pursuing a Master’s in Software Engineering while constantly exploring new technologies and better ways to solve problems.
+
                     </p>
                     {/* Redes sociales */}
                     <div className="flex justify-center md:justify-start gap-4 mt-4 text-2xl text-gray-700">

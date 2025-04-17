@@ -9,11 +9,11 @@ export const IntroSection = () => {
         <h1 className="text-4xl md:text-5xl font-title font-bold">
           Hi, I’m <span className='text-blueSky'>Abdiel</span>
         </h1>
-        <p className="text-lg  mt-4 font-body">
+        <p className="mt-2 font-body max-w-md mx-auto md:mx-0">
           Fullstack Developer
         </p>
-        <p className="mt-6 font-body max-w-md mx-auto md:mx-0">
-          Fullstack developer with 4 years of experience building internal tools and automation solutions. Skilled in React, Node.js and JavaScript technologies.
+        <p className="mt-6 font-body max-w-lg mx-auto md:mx-0">
+          I'm a <span className='text-blueSky'>Fullstack developer </span>with 4 years of experience building internal tools and automation solutions. Skilled in React, Node.js and JavaScript technologies.
         </p>
 
         <div className="mt-8 flex justify-center md:justify-start gap-4">

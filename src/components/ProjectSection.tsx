@@ -4,6 +4,8 @@ import {
   FaPhp,
   FaAngular,
   FaJs,
+  FaCss3,
+  FaVuejs,
 } from 'react-icons/fa'
 import {
   SiMysql,
@@ -15,13 +17,15 @@ import { JSX } from 'react'
 
 export const ProjectSection = () => {
   const techIcons: Record<string, JSX.Element> = {
-    React: <FaReact className="w-7 h-7 text-cyan-500" />,
-    'Node.js': <FaNodeJs className="w-7 h-7 text-blueSky-600" />,
-    PHP: <FaPhp className="w-7 h-7 text-indigo-600" />,
-    Angular: <FaAngular className="w-7 h-7 text-red-600" />,
-    JavaScript: <FaJs className="w-7 h-7 text-yellow-400" />,
-    MySQL: <SiMysql className="w-7 h-7 text-blue-700" />,
-    MUI: <SiMui className="w-7 h-7 text-sky-500" />,
+    React: <FaReact className="w-7 h-7 text-primary" />,
+    'Node.js': <FaNodeJs className="w-7 h-7 text-primary" />,
+    PHP: <FaPhp className="w-7 h-7 text-primary" />,
+    Angular: <FaAngular className="w-7 h-7 text-primary" />,
+    JavaScript: <FaJs className="w-7 h-7 text-primary" />,
+    MySQL: <SiMysql className="w-7 h-7 text-primary" />,
+    MUI: <SiMui className="w-7 h-7 text-primary" />,
+    CSS: <FaCss3 className="w-7 h-7 text-primary" />,
+    'Vue.js': <FaVuejs className="w-7 h-7 text-primary" />
   }
 
   const projects = [
@@ -52,12 +56,30 @@ export const ProjectSection = () => {
       code: 'https://github.com/AbdielP/snmp_manager',
       tech: ['JavaScript', 'Node.js'],
     },
+    {
+      title: 'E-Commerce product page',
+      description:
+        'A responsive product page built with Angular featuring image previews, cart functionality, and a clean UI.',
+      image: 'images/product_page.png',
+      demo: 'https://abdielp.github.io/angular-ecommerce-product-page/',
+      code: 'https://github.com/AbdielP/angular-ecommerce-product-page',
+      tech: ['Angular', 'Typescript', 'CSS'],
+    },
+    {
+      title: 'Room Homepage',
+      description:
+        ' A responsive landing page built with Vue.js that replicates the interactive design of Room’s homepage. Includes image slider functionality and modern layout practices.',
+      image: 'images/room_page.png',
+      demo: 'https://abdielp.github.io/vue-room-homepage/',
+      code: 'https://github.com/AbdielP/vue-room-homepage',
+      tech: ['Vue.js', 'CSS'],
+    }
   ]
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-16 mb-11">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-24 mb-11">
       <h2 className="text-3xl font-title font-bold text-start mb-8">
-        Projects
+      <span className='text-blueSky'>Projects</span> I’ve worked on
       </h2>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
