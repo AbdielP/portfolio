@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaArrowRight } from 'react-icons/fa';
 
 export const AboutMe = () => {
     return (
-        <section className="bg-gray-100 relative pb-24 pt-12 px-6" id='about'>
+        <section className="relative pb-24 pt-12 px-6" id='about'>
             <h1 className="absolute top-8 left-1/2 transform -translate-x-1/2 text-[120px] opacity-10 font-title select-none hidden md:block">
                 About
             </h1>

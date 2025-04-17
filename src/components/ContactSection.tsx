@@ -8,7 +8,7 @@ export const ContactSection = () => {
   }, [])
 
   return (
-    <section className="bg-white py-20 px-6" id='contact'>
+    <section className="py-20 px-6" id='contact'>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 font-title">
           Contact me

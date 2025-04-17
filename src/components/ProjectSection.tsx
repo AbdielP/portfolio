@@ -60,11 +60,11 @@ export const ProjectSection = () => {
         Projects
       </h2>
 
-      <div className="grid gap-10 md:grid-cols-2">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg p-6 border border-gray-200 shadow-md hover:shadow-lg hover:scale-[1.01] transition-all duration-200 ease-in-out flex flex-col justify-between"
+            className="backdrop-blur-lg border border-primary hover:backdrop-blur-xl hover:shadow-lg hover:scale-[1.01] transition-all duration-200 ease-in-out flex flex-col justify-between rounded p-6"
           >
             <img
               src={project.image}

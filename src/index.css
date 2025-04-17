@@ -5,13 +5,28 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-      @apply font-body text-primary;
-      background-color: #f3f4f6;
-      /* background: linear-gradient(to bottom, #f3f4f6, #e8f5e9); */
-    }
+  body {
+    @apply font-body text-primary;
+    /* background-color: #f3f4f6; */
+    background: linear-gradient(to bottom, #F0F9FF, #E0ECFF);
+    /* background: linear-gradient(to bottom, #F0F9FF, #60A5FA33); */
 
-    html {
-      scroll-behavior: smooth;
-    }
+    /* background-color: #f9f9f9;
+      background-image:
+        radial-gradient(#ccc 1px, transparent 1px),
+        radial-gradient(#ccc 1px, transparent 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px; */
+
+    /* background-color: #F0F9FF;
+    background-image:
+      radial-gradient(#3B82F611 1px, transparent 1px),
+      radial-gradient(#60A5FA11 1px, transparent 1px);
+    background-size: 40px 40px, 80px 80px;
+    background-position: 0 0, 20px 20px; */
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
