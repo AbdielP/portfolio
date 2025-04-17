@@ -17,9 +17,11 @@ export const Navbar = () => {
                 </button>
 
                 <div
-                    className={`flex flex-col md:flex-row gap-4 md:gap-8 text-sm font-medium ${open ? 'flex' : 'hidden'} md:flex`}
+                    className={`flex flex-col md:flex-row gap-4 md:gap-8 font-medium ${open ? 'flex' : 'hidden'} md:flex`}
                 >
                     <a href="#about" className="hover:text-black">About</a>
+                    <a href="#techs" className="hover:text-black">Tech stack</a>
+                    <a href="#tools" className="hover:text-black">Tools</a>
                     <a href="#projects" className="hover:text-black">Projects</a>
                     <a href="#contact" className="hover:text-black">Contact</a>
                 </div>

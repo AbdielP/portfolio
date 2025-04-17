@@ -12,7 +12,7 @@ export const MyTools = () => {
     ]
 
     return (
-        <section className="max-w-6xl mx-auto px-6 pb-20 text-primary">
+        <section className="max-w-6xl mx-auto px-6 pb-20 text-primary" id="tools">
             <h2 className="text-3xl font-title font-bold text-center mb-8">
                 Tools I Use
             </h2>
