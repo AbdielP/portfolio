@@ -3,6 +3,7 @@ import { AboutMe } from "./components/AboutMe"
 import { ContactSection } from "./components/ContactSection"
 import { Footer } from "./components/Footer"
 import { IntroSection } from "./components/IntroSection"
+import { MyStack } from "./components/MyStack"
 import { Navbar } from "./components/Navbar"
 import { ProjectSection } from "./components/ProjectSection"
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <IntroSection />
       <AboutMe />
+      <MyStack />
       <ProjectSection />
       <ContactSection />
       <Footer />
