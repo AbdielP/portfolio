@@ -14,7 +14,7 @@ export const MyTools = () => {
     return (
         <section className="max-w-6xl mx-auto px-6 pb-20 text-primary" id="tools">
             <h2 className="text-3xl font-title font-bold text-center mb-8">
-                Tools I Use
+                <span className='text-blueSky'>Tools</span> I Use
             </h2>
 
             <div className="flex flex-wrap justify-center gap-y-10 gap-x-16">

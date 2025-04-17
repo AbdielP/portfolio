@@ -16,7 +16,7 @@ export const AboutMe = () => {
                     className="w-48 h-48 rounded-full object-cover border border-gray-300 shadow"
                 />
                 <div>
-                    <h2 className="text-3xl font-title font-bold mb-4">About Me</h2>
+                    <h2 className="text-3xl font-title font-bold mb-4">About <span className='text-blueSky'>Me</span></h2>
                     <p className="font-body max-w-xl mb-6">
                         I’m a fullstack developer with extensive experience in internal applications and automation tools.
                         I’m currently pursuing a Master’s degree in Software Engineering and have a strong interest in learning new technologies.

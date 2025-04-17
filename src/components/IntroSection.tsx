@@ -7,7 +7,7 @@ export const IntroSection = () => {
       {/* Texto */}
       <div className="md:w-7/12 text-center md:text-left flex flex-col justify-center md:pl-12">
         <h1 className="text-4xl md:text-5xl font-title font-bold">
-          Hi, I’m Abdiel
+          Hi, I’m <span className='text-blueSky'>Abdiel</span>
         </h1>
         <p className="text-lg  mt-4 font-body">
           Fullstack Developer

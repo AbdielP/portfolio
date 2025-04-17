@@ -11,7 +11,7 @@ export const ContactSection = () => {
     <section className="py-20 px-6" id='contact'>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 font-title">
-          Contact me
+          Contact <span className='text-blueSky'>me</span>
         </h2>
 
         <p className="text-gray-600 mb-10 font-body max-w-xl mx-auto">
