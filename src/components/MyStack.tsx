@@ -24,16 +24,16 @@ export const MyStack = () => {
                 Tech <span className='text-blueSky'>Stack</span>
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
+            <div className="flex flex-wrap justify-center gap-y-10 gap-x-10 sm:gap-x-8 max-w-full">
+
                 {icons.map((Icon, i) => (
                     <div
                         key={i}
-                        className="w-[20%] max-w-[100px] sm:w-[25%] sm:max-w-[120px] xs:w-[33.33%] xs:max-w-[150px] 
-                       flex justify-center items-center"
-                    >
-                        <div className="text-6xl border border-primary rounded-md px-8 py-6 backdrop-blur-sm hover:scale-[1.05] transition-all duration-200">
+                        className="w-[33.33%] xs:w-[25%] sm:w-[20%] md:w-[16.66%] max-w-[120px] flex justify-center items-center">
+                        <div className="text-5xl md:text-6xl border border-primary rounded-md px-6 py-4 md:px-8 md:py-6 backdrop-blur-sm hover:scale-[1.05] transition-all duration-200">
                             {Icon}
                         </div>
+
                     </div>
                 ))}
             </div>
