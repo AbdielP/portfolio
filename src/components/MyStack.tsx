@@ -2,6 +2,7 @@ import { FaAngular, FaCss3, FaJs, FaNodeJs, FaPhp, FaReact } from 'react-icons/f
 import { SiDotnet, SiMongodb, SiMui, SiMysql, SiPostgresql } from 'react-icons/si'
 import { TbWorldSearch } from 'react-icons/tb'
 import { IconBox } from './ui/IconBox'
+import { motion } from 'framer-motion'
 
 export const MyStack = () => {
     return (
@@ -10,7 +11,13 @@ export const MyStack = () => {
                 Tech <span className='text-blueSky'>Stack</span>
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
+            <motion.div
+                className="flex flex-wrap justify-center gap-y-10 gap-x-10"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+            >
                 <IconBox title="React"><FaReact /></IconBox>
                 <IconBox title="Node.js"><FaNodeJs /></IconBox>
                 <IconBox title="JavaScript"><FaJs /></IconBox>
@@ -23,7 +30,7 @@ export const MyStack = () => {
                 <IconBox title="CSS3"><FaCss3 /></IconBox>
                 <IconBox title=".NET"><SiDotnet /></IconBox>
                 <IconBox title="MongoDB"><SiMongodb /></IconBox>
-            </div>
+            </motion.div>
         </section>
     )
 }

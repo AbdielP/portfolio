@@ -3,6 +3,7 @@ import { DiVisualstudio } from "react-icons/di"
 import { FaGitAlt } from "react-icons/fa"
 import { SiPostman } from "react-icons/si"
 import { IconBox } from "./ui/IconBox"
+import { motion } from 'framer-motion'
 
 export const MyTools = () => {
     return (
@@ -11,12 +12,18 @@ export const MyTools = () => {
                 <span className='text-blueSky'>Tools</span> I Use
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
+            <motion.div
+                className="flex flex-wrap justify-center gap-y-10 gap-x-10"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+            >
                 <IconBox title="VS Code"><BiLogoVisualStudio /></IconBox>
                 <IconBox title="Visual Studio"><DiVisualstudio /></IconBox>
                 <IconBox title="Git"><FaGitAlt /></IconBox>
                 <IconBox title="Postman"><SiPostman /></IconBox>
-            </div>
+            </motion.div>
         </section>
     )
 }
