@@ -1,6 +1,6 @@
-
 import avatar from '../assets/images/avatar.png'
 import { FaGithub, FaLinkedin, FaArrowRight } from 'react-icons/fa';
+import { motion } from 'framer-motion'
 
 export const AboutMe = () => {
     return (
@@ -9,7 +9,13 @@ export const AboutMe = () => {
                 About
             </h1>
 
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 relative z-10">
+            <motion.div
+                className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 relative z-10"
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+            >
                 <img
                     src={avatar}
                     alt="Avatar"
@@ -19,7 +25,6 @@ export const AboutMe = () => {
                     <h2 className="text-3xl font-title font-bold mb-4">About <span className='text-blueSky'>Me</span></h2>
                     <p className="mt-6 font-body max-w-lg mx-auto md:mx-0">
                     I enjoy building tools that make people’s work easier. Over the years, I’ve developed internal apps that save time, reduce errors, and improve efficiency. I’m currently pursuing a Master’s in Software Engineering while constantly exploring new technologies and better ways to solve problems.
-
                     </p>
                     {/* Redes sociales */}
                     <div className="flex justify-center md:justify-start gap-4 mt-4 text-2xl text-gray-700">
@@ -46,7 +51,7 @@ export const AboutMe = () => {
                         {/* <FaArrowRight className="text-xs" /> */}
                     </a>
                 </div>
-            </div>
+            </motion.div>
         </section>
 
     )

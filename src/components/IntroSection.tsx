@@ -1,9 +1,16 @@
+import { motion } from 'framer-motion'
 import mainImage from '../assets/images/dev_ilustration2.png'
 import { MdDownload } from "react-icons/md"
 
 export const IntroSection = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <motion.section
+      className="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       {/* Texto */}
       <div className="md:w-7/12 text-center md:text-left flex flex-col justify-center md:pl-12">
         <h1 className="text-4xl md:text-5xl font-title font-bold">
@@ -38,6 +45,6 @@ export const IntroSection = () => {
       <div className="md:w-5/12 flex justify-center">
         <img src={mainImage} alt="Illustration of Abdiel" className="w-80 h-auto" />
       </div>
-    </section>
+    </motion.section>
   )
 }
