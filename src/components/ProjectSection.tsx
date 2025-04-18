@@ -1,5 +1,15 @@
 import { projects } from '../data/projects.data'
 import { ProjectCard } from '../components/ui/ProjectCard'
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+}
 
 export const ProjectSection = () => {
   return (
@@ -8,11 +18,17 @@ export const ProjectSection = () => {
         <span className='text-blueSky'>Projects</span> I’ve worked on
       </h2>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        className="grid gap-10 md:grid-cols-2 lg:grid-cols-3"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 } 

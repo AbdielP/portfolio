@@ -6,9 +6,10 @@ import {
   FaReact, FaNodeJs, FaPhp, FaAngular, FaJs, FaCss3, FaVuejs
 } from 'react-icons/fa'
 import { SiMysql, SiMui } from 'react-icons/si'
+import { motion } from 'framer-motion'
 
 const techIcons: Record<string, JSX.Element> = {
-  React: <FaReact className="w-7 h-7 text-primary" />, 
+  React: <FaReact className="w-7 h-7 text-primary" />,
   'Node.js': <FaNodeJs className="w-7 h-7 text-primary" />,
   PHP: <FaPhp className="w-7 h-7 text-primary" />,
   Angular: <FaAngular className="w-7 h-7 text-primary" />,
@@ -25,7 +26,13 @@ interface Props {
 
 export const ProjectCard = ({ project }: Props) => {
   return (
-    <div className="backdrop-blur-lg border border-primary hover:backdrop-blur-xl hover:shadow-lg hover:scale-[1.01] transition-all duration-200 ease-in-out flex flex-col justify-between rounded p-6">
+    <motion.div
+      className="backdrop-blur-lg border border-primary hover:backdrop-blur-xl hover:shadow-lg hover:scale-[1.01] transition-all duration-200 ease-in-out flex flex-col justify-between rounded p-6"
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+    >
       <img
         src={project.image}
         alt={project.title}
@@ -67,6 +74,6 @@ export const ProjectCard = ({ project }: Props) => {
           Code
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 } 
